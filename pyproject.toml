@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathmnist-histopathology"
+version = "0.1.0"
+description = "Reproducible PathMNIST histopathology classification in PyTorch"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Ingrid Burrowes"}]
+dependencies = [
+  "matplotlib>=3.8,<4",
+  "medmnist>=3.0.2,<4",
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<3",
+  "pillow>=10,<12",
+  "PyYAML>=6,<7",
+  "scikit-learn>=1.4,<2",
+  "seaborn>=0.13,<1",
+  "torch>=2.3,<3",
+  "torchvision>=0.18,<1",
+  "tqdm>=4.66,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.6,<1"]
+
+[project.scripts]
+pathmnist-train = "pathmnist_classifier.train:main"
+pathmnist-evaluate = "pathmnist_classifier.evaluate:main"
+pathmnist-gradcam = "pathmnist_classifier.gradcam:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
