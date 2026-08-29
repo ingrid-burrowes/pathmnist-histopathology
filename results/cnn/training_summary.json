@@ -1,0 +1,6 @@
+{
+  "selection_split": "validation",
+  "monitor": "macro_f1",
+  "best_value": 0.9934619975246208,
+  "best_checkpoint": "outputs/cnn/best_checkpoint.pt"
+}

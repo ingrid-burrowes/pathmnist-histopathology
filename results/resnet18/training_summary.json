@@ -1,0 +1,6 @@
+{
+  "selection_split": "validation",
+  "monitor": "macro_f1",
+  "best_value": 0.9903636123963775,
+  "best_checkpoint": "outputs/resnet18/best_checkpoint.pt"
+}

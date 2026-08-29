@@ -1,0 +1,83 @@
+{
+  "split": "test",
+  "checkpoint_epoch": 8,
+  "checkpoint_validation_metrics": {
+    "accuracy": 0.9905037984806078,
+    "macro_f1": 0.9903636123963775,
+    "loss": 0.3007434462366558
+  },
+  "test_metrics": {
+    "accuracy": 0.9466573816155989,
+    "macro_f1": 0.9300296417344671,
+    "loss": 0.20395037317259399
+  },
+  "per_class": {
+    "adipose": {
+      "precision": 0.9770710059171598,
+      "recall": 0.9872944693572496,
+      "f1-score": 0.9821561338289962,
+      "support": 1338.0
+    },
+    "background": {
+      "precision": 0.9952996474735605,
+      "recall": 1.0,
+      "f1-score": 0.9976442873969376,
+      "support": 847.0
+    },
+    "debris": {
+      "precision": 0.8825136612021858,
+      "recall": 0.9528023598820059,
+      "f1-score": 0.9163120567375886,
+      "support": 339.0
+    },
+    "lymphocytes": {
+      "precision": 0.9703588143525741,
+      "recall": 0.9810725552050473,
+      "f1-score": 0.9756862745098039,
+      "support": 634.0
+    },
+    "mucus": {
+      "precision": 0.9927835051546392,
+      "recall": 0.9304347826086956,
+      "f1-score": 0.9605985037406484,
+      "support": 1035.0
+    },
+    "smooth muscle": {
+      "precision": 0.8482871125611745,
+      "recall": 0.8783783783783784,
+      "f1-score": 0.8630705394190872,
+      "support": 592.0
+    },
+    "normal colon mucosa": {
+      "precision": 0.9041614123581336,
+      "recall": 0.9676113360323887,
+      "f1-score": 0.9348109517601043,
+      "support": 741.0
+    },
+    "cancer-associated stroma": {
+      "precision": 0.8112244897959183,
+      "recall": 0.7553444180522565,
+      "f1-score": 0.7822878228782287,
+      "support": 421.0
+    },
+    "colorectal adenocarcinoma epithelium": {
+      "precision": 0.9700499168053245,
+      "recall": 0.9456609894566099,
+      "f1-score": 0.9577002053388091,
+      "support": 1233.0
+    },
+    "accuracy": 0.9466573816155989,
+    "macro avg": {
+      "precision": 0.9279721739578523,
+      "recall": 0.9331776987747369,
+      "f1-score": 0.9300296417344671,
+      "support": 7180.0
+    },
+    "weighted avg": {
+      "precision": 0.9473561266612854,
+      "recall": 0.9466573816155989,
+      "f1-score": 0.9465716095178349,
+      "support": 7180.0
+    }
+  }
+}

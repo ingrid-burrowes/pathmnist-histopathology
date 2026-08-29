@@ -72,5 +72,8 @@ def gradcam_target_layer(model: nn.Module, model_name: str) -> nn.Module:
             raise TypeError("Expected HistologyCNN for model_name='cnn'")
         return model.block3[3]
     if model_name == "resnet18":
-        return model.layer4[-1]  # type: ignore[attr-defined]
+        # PathMNIST images are only 64x64. ResNet's final stage produces a 2x2
+        # feature map, which is too coarse for useful localization. The preceding
+        # 4x4 stage offers a better spatial/semantic trade-off for Grad-CAM.
+        return model.layer3[-1]  # type: ignore[attr-defined]
     raise ValueError(f"Unknown model: {model_name}")
