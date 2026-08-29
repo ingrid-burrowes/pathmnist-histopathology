@@ -223,8 +223,7 @@ the compact final-run evidence in `results/` is tracked for auditability.
 
 ## Attribution
 
-PathMNIST is distributed by MedMNIST under **CC BY 4.0**. Please cite both MedMNIST
-and the original colorectal histology dataset when using it:
+PathMNIST is distributed as part of MedMNIST under CC BY 4.0 and derives from the NCT-CRC-HE-100K and CRC-VAL-HE-7K colorectal histology datasets. Accordingly, this project cites both sources:
 
 - Yang J, Shi R, Wei D, et al. [MedMNIST v2: A large-scale lightweight benchmark for
   2D and 3D biomedical image classification](https://doi.org/10.1038/s41597-022-01721-8).
